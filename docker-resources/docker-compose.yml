@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  discovery:
+    build: ../discovery/target
+    ports:
+      - "8080:8080"
+
+  node1:
+    build: ../node/target
+    ports:
+      - "8081:8081"
